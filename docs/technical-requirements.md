@@ -36,3 +36,53 @@ CyberGuard AI Version 1.0 is an educational, offline Data Science and Machine Le
 - Automated cybersecurity incident response.
 - Live network traffic collection.
 - Multiclass attack classification (reserved for Version 2.0).
+
+## 3.2 Non-Functional Requirements
+
+Non-Functional Requirements (NFRs) define the quality standards, technical characteristics, and operational constraints of CyberGuard AI Version 1.0.
+
+### Reproducibility
+
+- **NFR-01 — Reproducibility:** The project shall provide documented dependencies, consistent random seeds, and clear execution instructions to enable reproducible results.
+
+### Performance
+
+- **NFR-02 — Execution Performance:** The data processing and Machine Learning workflow should run on a standard personal computer without requiring dedicated GPU hardware or cloud infrastructure.
+- **NFR-03 — Resource Efficiency:** The project should use memory and computational resources efficiently, considering the size of the selected dataset.
+
+### Maintainability
+
+- **NFR-04 — Code Readability:** Python code shall use meaningful variable names, clear organization, and explanatory comments where necessary.
+- **NFR-05 — Modularity:** Data preprocessing, model training, and evaluation should be organized into logically separated steps to facilitate future improvements.
+
+### Usability
+
+- **NFR-06 — Documentation:** The repository shall include a README with the project objective, setup instructions, dependencies, and execution steps.
+- **NFR-07 — Interpretability:** Results shall be presented using understandable metrics, tables, and visualizations suitable for technical review.
+
+### Reliability
+
+- **NFR-08 — Data Validation:** The workflow shall check for missing values, duplicate records, and invalid data types before model training.
+- **NFR-09 — Error Handling:** The workflow should identify and clearly report common data-loading and preprocessing errors.
+
+### Security and Privacy
+
+- **NFR-10 — Data Privacy:** The project shall use publicly available or appropriately authorized datasets and shall not expose personal, confidential, or proprietary network information.
+- **NFR-11 — Secure Development:** The repository shall not contain passwords, API keys, or other sensitive credentials.
+
+### Compatibility
+
+- **NFR-12 — Development Environment:** The project shall use Python and widely supported Data Science libraries, including pandas, NumPy, scikit-learn, and visualization tools.
+- **NFR-13 — Execution Compatibility:** The project shall be executable through Jupyter Notebook or a compatible Python development environment such as VS Code.
+
+### Version Control
+
+- **NFR-14 — Version Control:** Project files, documentation, and source code shall be maintained in GitHub with descriptive Commit messages.
+
+### Project Scope
+
+- **NFR-15 — Educational Scope:** CyberGuard AI Version 1.0 is intended for offline research, learning, and portfolio demonstration, not production cybersecurity operations.
+
+### Verification Criteria
+
+The Non-Functional Requirements will be reviewed during development and final project validation. Compliance will be assessed through successful environment setup, reproducible execution, code review, documentation review, and examination of the project's outputs.
