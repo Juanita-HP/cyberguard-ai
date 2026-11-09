@@ -255,3 +255,69 @@ Targets must be justified using dataset characteristics, class distribution, and
 - Dataset imbalance and Data Leakage can produce misleading evaluation results.
 - The model is not validated for production intrusion detection.
 - Predictions are intended for research and portfolio demonstration only.
+
+## 3.5 Technical Constraints and Risks
+
+### Overview
+
+CyberGuard AI Version 1.0 is an educational, offline Machine Learning project developed for Data Science learning and portfolio demonstration. This section identifies the technical limitations, potential risks, and mitigation strategies that may affect project execution and model reliability.
+
+### Technical Constraints
+
+**TC-01 — Hardware Resources**
+- The project must run on a personal computer without dedicated GPU hardware.
+- Dataset size and model complexity must remain manageable with available RAM and CPU resources.
+
+**TC-02 — Development Environment**
+- Development will use Python, Jupyter Notebook, VS Code, Git, and GitHub.
+- Dependencies must be documented to support reproducibility.
+
+**TC-03 — Dataset Availability**
+- The project depends on an accessible, publicly available or appropriately authorized network traffic dataset.
+- The dataset must contain features and labels suitable for Binary Classification.
+
+**TC-04 — Offline Processing**
+- Version 1.0 will analyze historical network traffic data only.
+- Real-time monitoring and production deployment are excluded.
+
+**TC-05 — Project Scope**
+- The initial model will use Binary Classification.
+- Multiclass Classification is reserved for a potential Version 2.0.
+- The primary deliverables are a reproducible Jupyter Notebook, GitHub repository, and portfolio presentation.
+
+**TC-06 — Time and Complexity**
+- The workflow should remain achievable as an individual, beginner-friendly portfolio project.
+- Advanced architectures and unnecessary infrastructure will be avoided.
+
+### Risk Register
+
+| Risk ID | Risk | Impact | Mitigation Strategy |
+|---|---|---|---|
+| R-01 | Dataset contains missing, inconsistent, or duplicate records | Medium | Perform data validation and preprocessing |
+| R-02 | Imbalanced class distribution affects model evaluation | High | Inspect class proportions and use Precision, Recall, F1-score, and appropriate evaluation methods |
+| R-03 | Data Leakage produces misleading model performance | High | Separate training and testing data correctly and fit preprocessing only on training data |
+| R-04 | Model overfitting reduces generalization | High | Compare training and test performance and apply appropriate validation |
+| R-05 | Large dataset exceeds available computing resources | Medium | Use manageable subsets when justified and optimize data types |
+| R-06 | Incompatible Python packages interrupt execution | Medium | Document dependencies and use a reproducible environment |
+| R-07 | Model performance is insufficient | Medium | Compare against a simple baseline, investigate errors, and document limitations |
+| R-08 | Project scope expands beyond Version 1.0 | Medium | Follow the defined scope and prioritize essential deliverables |
+| R-09 | Dataset does not represent real-world network conditions | High | Document dataset limitations and avoid production-level claims |
+| R-10 | Sensitive information is accidentally committed to GitHub | High | Use authorized datasets, review files before committing, and exclude credentials |
+
+### Risk Management Approach
+
+CyberGuard AI will use a lightweight Scrumban workflow to track development tasks, blockers, and risks through GitHub Projects.
+
+Risks will be reviewed when selecting the dataset, preparing data, training the model, evaluating results, and preparing final deliverables.
+
+### Key Assumptions
+
+- A suitable labeled network traffic dataset can be obtained.
+- Python and the required Data Science libraries can run in the selected development environment.
+- The project can be completed without paid cloud infrastructure.
+- Model performance will depend on dataset quality, feature relevance, and evaluation methodology.
+
+### Scope Protection
+
+Any additional functionality must be evaluated against the objectives of Version 1.0. Features such as real-time detection, automated response, and production deployment will not be included in the initial release.
+
