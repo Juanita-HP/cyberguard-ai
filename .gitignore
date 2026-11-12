@@ -223,3 +223,19 @@ __marimo__/
 # Original datasets
 data/raw/
 
+
+# Raw datasets
+/Data/Raw data/
+/data/raw/
+
+# Python virtual environment
+.venv/
+
+# Python cache
+__pycache__/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# macOS system files
+.DS_Store
