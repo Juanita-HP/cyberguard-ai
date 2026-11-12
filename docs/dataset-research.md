@@ -148,3 +148,58 @@ classification research. However, duplicate records,
 potential data leakage, class imbalance, and data
 representativeness must be addressed during subsequent
 project phases.
+
+
+## 4.6 Licensing and Permitted Use
+
+### Dataset Ownership
+
+- Dataset: UNSW-NB15
+- Institution: University of New South Wales
+- Authors: Nour Moustafa and Jill Slay
+
+### Terms of Use
+
+The dataset is available for academic research without
+a usage fee. Commercial applications require an
+agreement with the authors.
+
+Copyright remains with the original authors.
+Users must cite the five publications identified
+on the official dataset website.
+
+### Project Compliance
+
+CyberGuard AI is an independent, non-commercial,
+educational research project.
+
+The project will:
+
+- Use the dataset for educational research.
+- Provide appropriate academic attribution.
+- Keep the original dataset files stored locally.
+- Exclude raw datasets from GitHub.
+- Direct users to the official download source.
+- Avoid commercial deployment.
+- Seek clarification if additional permissions
+  are required for public portfolio publication.
+
+### Publication Strategy
+
+The GitHub repository will contain original source code,
+technical documentation, and research methodology.
+
+Raw dataset redistribution will be avoided.
+Public research outputs will be shared subject to
+the applicable dataset usage conditions.
+
+### Official Source
+
+https://research.unsw.edu.au/projects/unsw-nb15-dataset
+
+Accessed: November 11, 2026.
+
+### Required References
+
+The five publications specified by UNSW will be
+included in the project's academic references.
