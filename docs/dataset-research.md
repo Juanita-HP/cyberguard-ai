@@ -203,3 +203,62 @@ Accessed: November 11, 2026.
 
 The five publications specified by UNSW will be
 included in the project's academic references.
+
+
+## 4.7 Dataset Selection and Justification
+
+### Selected Dataset
+
+UNSW-NB15 was selected as the primary dataset
+for CyberGuard AI Version 1.0.
+
+### Selection Rationale
+
+The dataset was selected based on the following criteria:
+
+- Alignment with the cybersecurity problem statement.
+- Availability of a binary target variable.
+- Compatibility with supervised machine learning.
+- Availability of predefined training and testing sets.
+- Manageable dataset size for local development.
+- Availability of feature documentation.
+- Compatibility with Python and pandas.
+- Suitability for educational cybersecurity research.
+
+### Technical Compatibility
+
+- Problem type: Binary Classification
+- Learning approach: Supervised Learning
+- Target variable: label
+- Benign class: 0
+- Malicious class: 1
+- Training records: 175,341
+- Testing records: 82,332
+- Total records: 257,673
+- Columns per dataset: 45
+- File format: CSV
+
+### Identified Risks
+
+- Duplicate records.
+- Potential training and testing overlap.
+- Class imbalance.
+- Historical attack patterns.
+- Limited real-world representativeness.
+
+These risks will be investigated during data cleaning,
+preprocessing, and model evaluation.
+
+### Final Decision
+
+UNSW-NB15 is selected as the official dataset
+for CyberGuard AI Version 1.0.
+
+The selection is based on technical compatibility,
+research objectives, computational feasibility,
+and educational value.
+
+The project will remain an offline research simulation
+and will not be presented as a production-ready
+cybersecurity system.
+
