@@ -68,3 +68,83 @@ Before confirming the final dataset selection:
 - UNSW-NB15: https://research.unsw.edu.au/projects/unsw-nb15-dataset
 - CIC-IDS2017: https://www.unb.ca/cic/datasets/ids-2017.html
 - CSE-CIC-IDS2018: https://www.unb.ca/cic/datasets/ids-2018.html
+
+
+## 4.5 Dataset Size, Formats, Quality and Limitations
+
+### Overview
+
+A preliminary dataset inspection was conducted using Python
+and pandas in a Jupyter Notebook to evaluate the structure,
+quality, and limitations of the UNSW-NB15 dataset.
+
+### Dataset Size and Format
+
+| Metric | Training Set | Testing Set |
+|---|---:|---:|
+| Number of records | 175,341 | 82,332 |
+| Number of columns | 45 | 45 |
+| File format | CSV | CSV |
+| Missing values | 0 | 0 |
+| Duplicate records | 67,601 | 26,387 |
+| Duplicate percentage | 38.55% | 32.05% |
+| Benign records | 56,000 | 37,000 |
+| Malicious records | 119,341 | 45,332 |
+
+Total number of records: 257,673.
+
+### Data Quality Assessment
+
+- No missing values were detected by pandas in either dataset.
+- Duplicate records were identified after excluding the ID column.
+- Duplicate records require further investigation before removal.
+- Numerical and categorical variables are present.
+- The dataset includes a binary target variable named `label`.
+- No modifications were made to the original datasets.
+
+### Class Distribution
+
+Training Dataset:
+
+- Benign (0): 31.94%
+- Malicious (1): 68.06%
+
+Testing Dataset:
+
+- Benign (0): 44.94%
+- Malicious (1): 55.06%
+
+The training dataset presents a class imbalance that must
+be considered during model training and evaluation.
+
+### Dataset Limitations
+
+- The dataset contains a substantial number of repeated records.
+- Potential overlap between training and testing records
+  requires further investigation.
+- Class distributions differ between the training and testing sets.
+- The dataset was generated in a controlled research environment
+  and may not fully represent real-world financial network traffic.
+- Historical attack patterns may not represent emerging threats.
+- Categorical variables require appropriate preprocessing.
+- The absence of missing values does not guarantee the absence
+  of invalid or inconsistent values.
+
+### Inspection Tools
+
+- Python
+- pandas
+- Jupyter Notebook
+- Visual Studio Code
+
+### Inspection Notebook
+
+`notebooks/01_dataset_inspection.ipynb`
+
+### Conclusion
+
+The UNSW-NB15 dataset is suitable for preliminary binary
+classification research. However, duplicate records,
+potential data leakage, class imbalance, and data
+representativeness must be addressed during subsequent
+project phases.
