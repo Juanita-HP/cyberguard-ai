@@ -332,24 +332,3 @@ A high model score is only meaningful when its assumptions and limitations are u
 **Repository:** [CyberGuard AI on GitHub](https://github.com/Juanita-HP/cyberguard-ai)
 
 *Built for learning, experimentation, and reproducible Machine Learning research.*
-## 15. Dataset Attribution & References
-
-CyberGuard AI uses the UNSW-NB15 dataset developed at UNSW Canberra. The original dataset creators retain their copyright.
-
-The project is intended for independent, non-commercial educational research. The original dataset files are not redistributed through this repository.
-
-**Official Dataset Source:** https://research.unsw.edu.au/projects/unsw-nb15-dataset
-
-### Academic References
-
-1. Moustafa, N., & Slay, J. (2015). *UNSW-NB15: A comprehensive data set for network intrusion detection systems (UNSW-NB15 network data set).* Military Communications and Information Systems Conference (MilCIS), IEEE.
-
-2. Moustafa, N., & Slay, J. (2016). *The evaluation of Network Anomaly Detection Systems: Statistical analysis of the UNSW-NB15 dataset and the comparison with the KDD99 dataset.* Information Security Journal: A Global Perspective.
-
-3. Moustafa, N., et al. (2017). *Novel geometric area analysis technique for anomaly detection using trapezoidal area estimation on large-scale networks.* IEEE Transactions on Big Data.
-
-4. Moustafa, N., et al. (2017). *Big data analytics for intrusion detection system: Statistical decision-making using finite dirichlet mixture models.* Data Analytics and Decision Support for Cybersecurity, Springer.
-
-5. Sarhan, M., Layeghy, S., Moustafa, N., & Portmann, M. (2020). *NetFlow Datasets for Machine Learning-Based Network Intrusion Detection Systems.* Big Data Technologies and Applications, Springer.
-
-For commercial use or other uses not clearly covered by the published terms, permission should be clarified with the dataset authors.
